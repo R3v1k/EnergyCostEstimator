@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"/><title>Завершение регистрации</title></head>
+<body>
+<h1>Завершите регистрацию</h1>
+<form th:action="@{/proceed}" th:object="${user}" method="post">
+    <label>Имя:      <input th:field="*{firstName}"/></label><br/>
+    <label>Фамилия:  <input th:field="*{lastName}"/></label><br/>
+    <label>Email:    <input th:field="*{email}"/></label><br/>
+    <label>Пол:
+        <select th:field="*{gender}">
+            <option value="MALE">Мужской</option>
+            <option value="FEMALE">Женский</option>
+        </select>
+    </label><br/>
+    <label>Регион:   <input th:field="*{region}"/></label><br/>
+    <button type="submit">Сохранить</button>
+</form>
+</body>
+</html>
