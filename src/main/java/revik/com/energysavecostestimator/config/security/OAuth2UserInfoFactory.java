@@ -9,7 +9,6 @@ public class OAuth2UserInfoFactory {
             case "github" -> new GithubOAuth2UserInfo(attributes);
             case "google" -> new GoogleOAuth2UserInfo(attributes);
             case "yandex" -> new YandexOAuth2UserInfo(attributes);
-            case "vk" -> new VkOAuth2UserInfo(attributes);
             default -> throw new IllegalArgumentException("Unsupported provider: " + regId);
         };
     }
