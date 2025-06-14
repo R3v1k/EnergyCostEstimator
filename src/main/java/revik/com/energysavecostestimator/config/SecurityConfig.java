@@ -14,16 +14,15 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http,
                                            CustomOAuth2UserService userService,
                                            OAuth2AuthSuccessHandler successHandler) throws Exception {
-        http
-                .authorizeHttpRequests(a -> a
-                        .requestMatchers("/", "/login**", "/css/**").permitAll()
-                        .anyRequest().authenticated()
-                )
+        http.authorizeHttpRequests(a -> a
+                        .requestMatchers("/", "/login**", "/css/**",
+                                "/swagger-ui/**", "/v3/api-docs/**").permitAll()
+                        .requestMatchers("/profile").authenticated()
+                        .anyRequest().authenticated())
                 .oauth2Login(o -> o
                         .loginPage("/login")
                         .userInfoEndpoint(u -> u.userService(userService))
-                        .successHandler(successHandler)
-                );
+                        .successHandler(successHandler));
         return http.build();
     }
 }
