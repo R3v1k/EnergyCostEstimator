@@ -11,6 +11,7 @@ import Devices     from './pages/Devices';
 import Estimate    from './pages/Estimate';
 import Appointment from './pages/Appointment';
 import ThankYou    from './pages/ThankYou';
+import Profile     from './pages/Profile';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Link to="/">Home</Link>
           <Link to="/login">Log in</Link>
           <Link to="/join">Join</Link>
+          <Link to="/profile">Profile</Link>
         </nav>
       </header>
 
@@ -33,6 +35,7 @@ function App() {
         <Route path="/estimate"    element={<Estimate />} />
         <Route path="/appointment" element={<Appointment />} />
         <Route path="/thank-you"   element={<ThankYou />} />
+        <Route path="/profile"     element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );

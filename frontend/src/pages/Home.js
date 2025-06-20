@@ -6,7 +6,7 @@ export default function Home() {
     <div className="table">
       <h1>Tired of wasting money & energy?</h1>
       <p>See how much you can save with our devices!</p>
-      <Link to="/join"><button>Get started</button></Link>
+      <Link to="/devices"><button>Get started</button></Link>
     </div>
   );
 }

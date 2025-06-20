@@ -7,7 +7,7 @@ export default function Join() {
       <input placeholder="E-mail" type="email" />
       <input placeholder="Login" />
       <input placeholder="Password" type="password" />
-      <Link to="/devices"><button>Proceed</button></Link>
+      <Link to="/appointment"><button>Proceed</button></Link>
     </div>
   );
 }
