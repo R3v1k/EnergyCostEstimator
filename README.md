@@ -1,5 +1,10 @@
 # 📊 Energy Cost Saving Estimator
 
+> A smart tool to estimate potential savings from optimizing energy usage.
+
+[🔗 Deployed version](https://example.com) | [📽️ Demo Video](https://drive.google.com/file/d/1jFldc7cPTFhcbB_Lyyhdt7Cn5E1Y1cAM/view?usp=sharing)
+
+
 [![Contributors](https://img.shields.io/github/contributors/R3v1k/EnergyCostSavingEstimator.svg?style=for-the-badge)](https://github.com/R3v1k/EnergyCostSavingEstimator/graphs/contributors)
 [![Forks](https://img.shields.io/github/forks/R3v1k/EnergyCostSavingEstimator.svg?style=for-the-badge)](https://github.com/R3v1k/EnergyCostSavingEstimator/network/members)
 [![Stargazers](https://img.shields.io/github/stars/R3v1k/EnergyCostSavingEstimator.svg?style=for-the-badge)](https://github.com/R3v1k/EnergyCostSavingEstimator/stargazers)
