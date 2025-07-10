@@ -208,10 +208,6 @@ cd EnergyCostSavingEstimator
 ```
 
 #### Backend:
-
-> **Note:** I just copy and paste without reading
-
-
 ```bash
 cd backend
 ./gradlew build
